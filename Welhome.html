@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Splash & Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Pantalla de Carga -->
+    <div class="splash-screen" id="splash-screen">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo Welhome" class="logo-img">
+            <div class="logo-text">Welhome</div>
+        </div>
+        <div class="loader"></div>
+    </div>
+
+    <!-- Contenedor del Login (Inicialmente oculto) -->
+    <div class="main-content" id="main-content">
+        <div class="login-container">
+            <form class="login-form" id="login-form">
+                <h2>Iniciar Sesión</h2>
+                <div class="input-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="usuario@example.com" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="********" required>
+                    <span class="toggle-password" id="toggle-password">👁️</span>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" id="remember-me"> Recuérdame</label>
+                    <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+                </div>
+                <button type="submit">Ingresar</button>
+                <p class="register">¿No tienes cuenta? <a href="registrate.html">Regístrate</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
